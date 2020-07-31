@@ -79,6 +79,11 @@ public class Customer extends SalesManagerEntity<Long, Customer> implements Audi
 	@NotEmpty
 	@Column(name="CUSTOMER_EMAIL_ADDRESS", length=96, nullable=false)
 	private String emailAddress;
+
+	/*@Cpf
+	@NotEmpty
+	@Column(name="CUSTOMER_CPF_ADDRESS", length=96, nullable=false)
+	private String cpfString;*/
 	
 	@Column(name="CUSTOMER_NICK", length=96)
 	private String nick;
@@ -184,6 +189,14 @@ public class Customer extends SalesManagerEntity<Long, Customer> implements Audi
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
 	}
+
+	/*public String getCpfString(){
+		return cpfString;
+	}
+
+	public void SetCpfString(String cpfString){
+		this.cpfString = cpfString;
+	}*/
 
 	public String getNick() {
 		return nick;
