@@ -104,9 +104,9 @@ function populateData(div, data, defaultValue) {
 				      <div class="form-group col-sm-12">
 				        <label for="cardNumber"><s:message
 								code="label.payment.creditcard.cardnumber"
-								text="Card number" /><span class="required">*</span></label>
+								text="Número do cartão" /><span class="required">*</span></label>
 						<s:message code="NotEmpty.order.creditcard.cardnumber"
-							text="Card number is required"
+							text="Número do cartão é necessário"
 							var="msgCardNumber" />
 				        <!--  Hosted Fields div container -->
 				        <div class="form-control" id="creditcard_card_number" name="payment['creditcard_card_number']" autocomplete="off"></div>
@@ -118,7 +118,7 @@ function populateData(div, data, defaultValue) {
 				            <!--  Hosted Fields div container -->
 				          	<label for="expiryMonth"><s:message
 								code="label.payment.creditcard.cardexpiry.month"
-								text="Card expiry month" /><span class="required">*</span></label>
+								text="Mês de vencimento do cartão" /><span class="required">*</span></label>
 				            <!--<select id="expiration-month-select" name="payment['creditcard_card_expirationmonth']" class="input-small form-control form-control-25"></select>-->
 				          	<div class="form-control" id="expiration-month" style=""></div>
 				          	<span class="helper-text"></span>
@@ -127,7 +127,7 @@ function populateData(div, data, defaultValue) {
 				            <!--  Hosted Fields div container -->
 				            <label for="expiryYear"><s:message
 								code="label.payment.creditcard.cardexpiry.year"
-								text="Card expiry year" /><span class="required">*</span></label>
+								text="Ano de vencimento do cartão" /><span class="required">*</span></label>
 				            <!--<select id="expiration-year-select" name="payment['creditcard_card_expirationyear']" class="input-medium form-control form-control"></select>-->
 				          	<div class="form-control" id="expiration-year" style=""></div>
 				          	<span class="helper-text"></span>
@@ -136,12 +136,12 @@ function populateData(div, data, defaultValue) {
 				    <div class="row" style="margin-left:5px !important;margin-right:5px !important;margin-top:0px !important;margin-bottom:0px !important">
 				      <div class="form-group col-sm-6">
 				        <label class="control-label"><s:message code="label.payment.creditcard.cardcvv" text="Card validation number" /></label>
-				        <s:message code="NotEmpty.order.creditcard.cvv" text="Credit card validation digit is required" var="msgCardCvv"/>
+				        <s:message code="NotEmpty.order.creditcard.cvv" text="Dígito de valicação do cartão é necessário" var="msgCardCvv"/>
 				        <!--  Hosted Fields div container -->
 				        <div class="form-control" id="cvv" name="payment['creditcard_card_cvv']"></div>
 				      </div>
 				      <div class="form-group col-sm-6">
-				        <label class="control-label"><s:message code="label.generic.postalcode" text="Card owner postal code" /></label>
+				        <label class="control-label"><s:message code="label.generic.postalcode" text="CEP do proprietário do cartão" /></label>
 				        <!--  Hosted Fields div container -->
 				        <div class="form-control" id="postal-code"></div>
 				      </div>
