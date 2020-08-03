@@ -19,7 +19,7 @@ response.setDateHeader ("Expires", -1);
 
 <div class="cartbox" id="cart-box">
 	<div class="box-content clearfix">
-		<p id="shoppingcarttitle" class="lbw"><s:message code="label.cart" text="Shopping cart"/></p>
+		<p id="shoppingcarttitle" class="lbw"><s:message code="label.cart" text="Carrinho"/></p>
 		<br />
 		<div id="cartShowLoading" class="loading-indicator" style="width:100%;display:none;"></div>
 		<div id="cartMessage" style="width:100%;display:none;"></div>
@@ -29,7 +29,7 @@ response.setDateHeader ("Expires", -1);
 				</tbody>
 			</table>
 			<div id="total-box" class="total-box"></div><!-- totals place holder -->
-			<button class="btn btn-large checkoutButton" style="width: 100%" type="button" onclick="viewShoppingCartPage();"><s:message code="label.checkout" text="Checkout"/></button>
+			<button class="btn btn-large checkoutButton" style="width: 100%" type="button" onclick="viewShoppingCartPage();"><s:message code="label.checkout" text="Finalizar"/></button>
 		</div>
 	</div>
 </div>

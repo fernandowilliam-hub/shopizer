@@ -19,7 +19,7 @@ response.setDateHeader ("Expires", -1);
 		<table class="container">
 			<tr>
 				<td width="60"><img src="<c:url value="/resources/img/important-icon.png"/>" width="50"></td>
-				<td valign="middle"><h3><s:message code="message.timeout" text="The request timed out"/></h3></td>
+				<td valign="middle"><h3><s:message code="message.timeout" text="A requisição demorou muito"/></h3></td>
 			</tr>
 		</table>
 					

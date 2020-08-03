@@ -24,7 +24,7 @@
 		<div id="store.error" class="alert alert-error alert-danger"
 			style="display: none;">
 			<s:message code="message.error.shoppingcart.update"
-				text="An error occurred while updating the shopping cart" />
+				text="Ocorreu um erro enquanto atualizavamos o carrinho." />
 		</div>
 
 
@@ -35,7 +35,7 @@
 			<div id="store.error" class="alert alert-error"
 				style="display: block;">
 				<s:message code="message.error.shoppingcart.unavailables"
-					text="Some of the item in your shopping cart are as of today unavailable for purchase. Those items will be removed from your shopping cart when the order form is displayed. If you are interested in purchasing this item, please send use a message with the item number, we will get back to you as soon as possible with an update on the availability of the item." />
+					text="Atualmente, alguns dos itens do seu carrinho de compras estão indisponíveis para compra. Esses itens serão removidos do seu carrinho de compras quando o formulário de pedido for exibido. Se você estiver interessado em comprar este item, envie uma mensagem com o número do item; entraremos em contato o mais breve possível com uma atualização sobre a disponibilidade do item." />
 			</div>
 			<table>
 				<c:forEach items="${cart.unavailables}" var="unavailable"
@@ -67,9 +67,9 @@
 									</c:forEach>
 								</ul>
 							</c:if> <br />
-						<s:message code="label.quantity" text="Quantity" />: <c:out
+						<s:message code="label.quantity" text="Quantidade" />: <c:out
 								value="${unavailable.quantity}" /> <br />
-						<s:message code="label.generic.price" text="Price" />: <c:out
+						<s:message code="label.generic.price" text="Preço" />: <c:out
 								value="${unavailable.price}" /></td>
 						<td>&nbsp;</td>
 
@@ -101,8 +101,8 @@
 									<tr>
 										<th><s:message code="label.generic.item.title"
 												text="Item" /></th>
-										<th><s:message code="label.quantity" text="Quantity" /></th>
-										<th><s:message code="label.generic.price" text="Price" /></th>
+										<th><s:message code="label.quantity" text="Quantidade" /></th>
+										<th><s:message code="label.generic.price" text="Preço" /></th>
 										<th><s:message code="label.order.total" text="Total" /></th>
 										<th></th>
 
@@ -195,12 +195,12 @@
 											code="label.order.recalculate" text="Racalculate" /></a> <a
 									href="<c:url value="/shop"/>" class="btn btn-warning"><i
 										class="fa fa-angle-left"></i> <s:message
-											code="button.label.continue" text="Continue shopping" /></a></td>
+											code="button.label.continue" text="Continue comprando" /></a></td>
 								<td colspan="2">
 									<button id="checkoutButton" type="submit"
 										class="btn btn-success btn-block">
 										<s:message code="label.cart.placeorder"
-											text="Place your order" />
+											text="Faça seu pedido" />
 										<i class="fa fa-angle-right"></i>
 									</button>
 								</td>
@@ -211,7 +211,7 @@
 					<c:otherwise>
 						<tr>
 							<td><s:message code="cart.empty"
-									text="Your Shopping cart is empty" /></td>
+									text="Seu carrinho de compras está vazio" /></td>
 						</tr>
 					</c:otherwise>
 				</c:choose>

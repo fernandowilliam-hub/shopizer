@@ -77,11 +77,11 @@ response.setDateHeader ("Expires", -1);
 									</a>
 									
 									<ul class="dropdown-menu">
-										<li><a href="<c:url value="/admin/users/displayUser.html" />"><s:message code="label.my.profile" text="My profile" /></a></li>
+										<li><a href="<c:url value="/admin/users/displayUser.html" />"><s:message code="label.my.profile" text="Meu Perfil" /></a></li>
 										<li class="divider"></li>
 										<li>
 											<c:url value="/admin/logout" var="logoutUrl"/>
-											<a href="${logoutUrl}"><s:message code="button.label.logout" text="Logout" /></a>
+											<a href="${logoutUrl}"><s:message code="button.label.logout" text="Sair" /></a>
 										</li>
 									</ul>
 									

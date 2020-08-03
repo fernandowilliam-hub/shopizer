@@ -19,7 +19,7 @@ response.setDateHeader ("Expires", -1);
 		<table class="container">
 			<tr>
 				<td width="60"><img src="<c:url value="/resources/img/important-icon.png"/>" width="50"></td>
-				<td valign="middle"><h3><s:message code="message.resource.notfound" text="Page not found"/></h3></td>
+				<td valign="middle"><h3><s:message code="message.resource.notfound" text="Página não encontrada"/></h3></td>
 			</tr>
 		</table>
 					
