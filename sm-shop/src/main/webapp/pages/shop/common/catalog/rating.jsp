@@ -31,16 +31,16 @@ response.setDateHeader ("Expires", -1);
 									</script>
 									<c:choose>
 									   <c:when test="${product.ratingCount>0}">
-											<a href="#" onclick="$('a[href=\'#reviews\']').trigger('click');"><c:out value="${product.ratingCount}"/>&nbsp;<s:message code="label.product.customer.reviews" text="Customer reviews" /></a>
+											<a href="#" onclick="$('a[href=\'#reviews\']').trigger('click');"><c:out value="${product.ratingCount}"/>&nbsp;<s:message code="label.product.customer.reviews" text="Avaliação dos compradores" /></a>
 									   </c:when>
 									   <c:otherwise>
-									   		0&nbsp;<s:message code="label.product.customer.reviews" text="Customer reviews" />
+									   		0&nbsp;<s:message code="label.product.customer.reviews" text="Avaliação dos compradores" />
 									   </c:otherwise>
 									</c:choose>
 									<c:if test="${requestScope.HIDEACTION==null}">
 									<sec:authorize access="hasRole('AUTH_CUSTOMER') and fullyAuthenticated">
   										|  
-									<a href="<c:url value="/shop/customer/review.html"/>?productId=${product.id}"><s:message code="label.product.reviews.write" text="Write a review" /></a>
+									<a href="<c:url value="/shop/customer/review.html"/>?productId=${product.id}"><s:message code="label.product.reviews.write" text="Escreva uma avaliação" /></a>
 									</sec:authorize>
 									</c:if>
 								</div>
