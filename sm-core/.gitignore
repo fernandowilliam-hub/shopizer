@@ -2,3 +2,4 @@
 /SALESMANAGER-TEST.trace.db
 /target/
 /files/
+.vscode/launch.json
